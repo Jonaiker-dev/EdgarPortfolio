@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon/components';
+import DevSVG from '../assets/developer.svg';
+---
+<div class="mt-[40px] md:flex gap-4 ">
+	<!-- Presentacion contenedor -->
+	 <div class="md:flex-6/12 md:flex md:flex-col md:justify-center  ">	
+			 <!-- Presentacion  -->
+		 <div class="">
+			 <h1 class="text-[57px] titulo text-white md:text-[101px] text-balance">HOLA,SOY EDGAR SUNCION.</h1>
+			 <p class="text-[16px] texto text-balance">Hola, soy un apasionado desarrollador Angular. Disfruto transformando ideas en aplicaciones web funcionales y atractivas. Mi enfoque principal es escribir código limpio, mantenible y de alto rendimiento. ¡Listo para colaborar!</p>
+		 </div>
+		 <!-- Botones Social -->
+		 <div class=" flex mt-[32px] justify-between w-80 items-center">
+			 <a href="https://wa.me/51962263478" target="_blank" class="flex gap-3 text-sm font-bold text-black items-center border-0 bg-[var(--Botones)] p-4 rounded-4xl">
+				 <p class="texto">CONTACTAME</p>
+				 <Icon name="mdi:arrow-top-right" class="bg-black rounded-full text-white  p-2 w-10 h-10 "/>	
+			 </a>
+			 <a href="https://www.linkedin.com/in/jonaiker-sunci%C3%B3n-mart%C3%ADnez/" target="_blank" class=" bg-[#222222] text-[var(--Botones)] border-0 rounded-full w-14 h-14 flex items-center justify-center	">
+				 <Icon name="line-md:linkedin" class='text-3xl' />
+			 </a>
+			 <a href="https://github.com/Jonaiker-dev" target="_blank" class="bg-[#222222] text-[var(--Botones)] border-0 rounded-full w-14 h-14 flex items-center justify-center">
+				 <Icon name="line-md:github"  class='text-3xl'/>
+			 </a>
+		 </div>
+	 </div>
+	 <!-- Imagen -->
+	 <div class=" md:flex-6/12  p-4 md:mt-0 mt-2">
+		 <DevSVG class="h-full w-full" />
+	 </div>
+</div>

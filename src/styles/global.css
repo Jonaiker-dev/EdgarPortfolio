@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+
+:root{
+    --colortitulos:#FFFFFF;
+    --colortexto:#C7C7C7;
+    --Background:#0A0A0A;
+    --Botones: #D3E97A;
+    --Titulos: "Bebas Neue", sans-serif;
+    --Texto: "Manrope", sans-serif;
+}
+
+body{
+    background-color: var(--Background);
+    color: var(--colortexto);
+}
+
+.titulo{
+    font-family: var(--Titulos);
+}
+.texto{
+    font-family: var(--Texto) ;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.scroll{
+    view-timeline: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: appear;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+}

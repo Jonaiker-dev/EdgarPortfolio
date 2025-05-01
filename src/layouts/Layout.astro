@@ -1,0 +1,93 @@
+---
+import { ClientRouter ,fade } from "astro:transitions";
+import "../styles/global.css";
+import { Icon } from 'astro-icon/components';
+
+---
+
+<!doctype html>
+<html lang="en" animate-slide-in-top >
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Edgar Martinez</title>
+		<ClientRouter />	
+	</head>
+	<body class="" >
+		<div class="container mx-auto  px-4" >
+			<header class="md:flex md:justify-between mt-6 items-center " >
+				<div class=" flex justify-between items-center">
+					<a class="text-3xl md:text-[32px] text-[var(--colortexto)] titulo" href="/">Edgar Suncion</a>
+					<button id="BtnOpciones" class="md:hidden z-51  hover:cursor-pointer fixed top-4 right-4">
+						<Icon name="mdi:sort-variant" class=" text-[48px]"></Icon>
+					</button>
+				</div>
+				<nav id="menu" class="md:text-[16px] md:bg-inherit md:flex-row md:static  md:gap-4  md:w-fit md:h-fit md:translate-0 texto
+				text-[var(--colortexto)] bg-[var(--Background)] titulo  fixed top-0 left-0 w-full h-screen z-50 flex flex-col justify-center  items-center gap-10 text-3xl font-bold transform translate-x-full transition duration-300 ease-in-out">
+					<a href="#About" class=" hover:text-[var(--Botones)]">Sobre Mi</a>
+					<a href="#projects" class=" hover:text-[var(--Botones)]">Proyectos</a>
+					<a href="#contact" class=" hover:text-[var(--Botones)]">Contacto</a>
+				</nav>
+			</header>
+			<div transition:animate={fade({duration:"0.5s"})}>
+				<slot />
+			</div>
+			<footer class="text-center p-5 border-t-2 border-[#484848] xl:-mx-[90px] 2xl:-mx-[210px] -mx-4 w-screen">
+				<p class="text-2xl text-[var(--Botones)] titulo">@Jonaiker-dev</p>
+			</footer>
+		</div>
+	</body>
+</html>
+
+<script>
+	document.addEventListener('astro:after-swap', () => {
+	  
+	  const mobileMenu = document.getElementById("BtnOpciones")
+	  const Menu=document.getElementById("menu")
+
+	  mobileMenu?.addEventListener('click', () => {
+		Menu?.classList.toggle("translate-x-full")
+	  });
+
+	  document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
+      	anchor.addEventListener('click', function (e) {
+      	e.preventDefault();
+		Menu?.classList.toggle("translate-x-full")
+
+		const targetId:any = this.getAttribute('href');
+		document.querySelector(targetId).scrollIntoView({
+        	behavior: 'smooth'
+      	});	
+     
+      	});
+	  })
+
+
+
+	});
+
+	document.addEventListener('DOMContentLoaded', () => {
+	  
+	  const mobileMenu = document.getElementById("BtnOpciones")
+	  const Menu=document.getElementById("menu")
+
+	  mobileMenu?.addEventListener('click', () => {
+		Menu?.classList.toggle("translate-x-full")
+	  });
+
+	  document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
+      	anchor.addEventListener('click', function (e) {
+      	e.preventDefault();
+		Menu?.classList.toggle("translate-x-full")
+		const targetId:any = this.getAttribute('href');
+		document.querySelector(targetId).scrollIntoView({
+        	behavior: 'smooth'
+      	});	
+     
+      	});
+	  })
+
+	});
+  </script>

@@ -1,0 +1,29 @@
+[
+    {
+        "img":"/fventas.webp",
+        "title":"Sistema de Ventas",
+        "description":"Creé un sistema de control de inventarios diseñado específicamente para una pequeña empresa de venta de accesorios. Este proyecto de programación busca optimizar la gestión de sus productos, facilitando el seguimiento del stock, las entradas y salidas, y proporcionando información clave para la toma de decisiones en la administración del inventario. ",
+        "Tech":[
+            {
+                "Angular":"skill-icons:angular-dark",
+                "Supabase":"skill-icons:supabase-dark",
+                "Bootstrap":"skill-icons:bootstrap",
+                "Github":"mdi:github"
+            }
+        ],
+        "github":"https://github.com/Jonaiker-dev/FormularioVentas"
+    },
+    {   
+        "img":"/fventas.webp",
+        "title":"Sistema de Ventas",
+        "description":"Creé un sistema de control de inventarios diseñado específicamente para una pequeña empresa de venta de accesorios. Este proyecto de programación busca optimizar la gestión de sus productos, facilitando el seguimiento del stock, las entradas y salidas, y proporcionando información clave para la toma de decisiones en la administración del inventario. ",
+        "Tech":[
+            {
+                "Angular":"skill-icons:angular-dark",
+                "Supabase":"skill-icons:supabase-dark",
+                "Bootstrap":"skill-icons:bootstrap"
+            }
+        ],
+        "github":"https://github.com/Jonaiker-dev/FormularioVentas"
+    }
+]

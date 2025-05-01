@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="mt-20 scroll scroll-mt-72 md:flex" id="contact">
+    <div class="md:flex-6/12">
+        <h1 class="titulo text-white text-[43px] md:text-8xl ">Contactemos</h1>
+        <p class="texto text-lg mt-5">Gracias por llegar hasta aca, dejo mis metodos de contacto: </p>
+        <div class="flex md:mt-20 mt-5 gap-6 ">
+            <a href="https://github.com/Jonaiker-dev" target="_blank">
+                <Icon name="mdi:github" class="w-10 h-10 hover:text-[var(--Botones)]"/>
+            </a>
+            <a href="https://www.linkedin.com/in/jonaiker-sunci%C3%B3n-mart%C3%ADnez/" target="_blank">
+                <Icon name="mdi:linkedin" class="w-10 h-10 hover:text-[var(--Botones)]"/>
+            </a>
+        </div>
+    </div>
+    <form action="#" class="space-y-8 texto mt-10 mb-20 md:flex-6/12 md:mt-0">
+        <div>
+            <label for="subject" class="block mb-2 text-sm font-medium  text-gray-300">Nombre</label>
+            <input type="text" id="subject" class="block p-3 w-full text-sm  rounded-lg border  shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="ex: Jose Martinez" required>
+        </div>
+        <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Tu correo</label>
+            <input type="email" id="email" class="shadow-sm border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="example@hotmail.com" required>
+        </div>
+        <div class="sm:col-span-2">
+            <label for="message" class="block mb-2 text-sm font-medium  text-gray-300">Your message</label>
+            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm   rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-gray-700 dark:border-gray-600 placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+        </div>
+        <button type="submit" class="py-3 px-5 text-sm font-medium text-center bg-[var(--Botones)] text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 cursor-pointer">Send message</button>
+    </form>
+</div>
