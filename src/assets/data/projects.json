@@ -14,16 +14,15 @@
         "github":"https://github.com/Jonaiker-dev/FormularioVentas"
     },
     {   
-        "img":"/fventas.webp",
-        "title":"Sistema de Ventas",
-        "description":"Creé un sistema de control de inventarios diseñado específicamente para una pequeña empresa de venta de accesorios. Este proyecto de programación busca optimizar la gestión de sus productos, facilitando el seguimiento del stock, las entradas y salidas, y proporcionando información clave para la toma de decisiones en la administración del inventario. ",
+        "img":"/portfolio.webp",
+        "title":"Portfolio Personal",
+        "description":"Aqui se detalla mi experiencia como programador, mis proyectos y habilidades , asi como habilidades blandas ",
         "Tech":[
             {
-                "Angular":"skill-icons:angular-dark",
-                "Supabase":"skill-icons:supabase-dark",
-                "Bootstrap":"skill-icons:bootstrap"
+                "AstroJS":"skill-icons:astro",
+                "TailwindCSS":"skill-icons:tailwindcss-light"
             }
         ],
-        "github":"https://github.com/Jonaiker-dev/FormularioVentas"
+        "github":"https://github.com/Jonaiker-dev/EdgarPortfolio"
     }
 ]
