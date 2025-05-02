@@ -3,6 +3,7 @@ import { ClientRouter ,fade } from "astro:transitions";
 import "../styles/global.css";
 import { Icon } from 'astro-icon/components';
 
+const {pages}= Astro.props
 ---
 
 <!doctype html>
@@ -26,9 +27,15 @@ import { Icon } from 'astro-icon/components';
 				</div>
 				<nav id="menu" class="md:text-[16px] md:bg-inherit md:flex-row md:static  md:gap-4  md:w-fit md:h-fit md:translate-0 texto
 				text-[var(--colortexto)] bg-[var(--Background)] titulo  fixed top-0 left-0 w-full h-screen z-50 flex flex-col justify-center  items-center gap-10 text-3xl font-bold transform translate-x-full transition duration-300 ease-in-out">
-					<a href="#About" class=" hover:text-[var(--Botones)]">Sobre Mi</a>
-					<a href="#projects" class=" hover:text-[var(--Botones)]">Proyectos</a>
-					<a href="#contact" class=" hover:text-[var(--Botones)]">Contacto</a>
+					{
+						(pages!="About")
+						?<a href="#About" class=" hover:text-[var(--Botones)]">Sobre Mi</a>
+						<a href="#projects" class=" hover:text-[var(--Botones)]">Proyectos</a>
+						<a href="#contact" class=" hover:text-[var(--Botones)]">Contacto</a>
+						:
+						<a href="#Knowledge" class=" hover:text-[var(--Botones)]">Stack</a>
+						<a href="#contact" class=" hover:text-[var(--Botones)]">Contacto</a>
+					}
 				</nav>
 			</header>
 			<div transition:animate={fade({duration:"0.5s"})}>

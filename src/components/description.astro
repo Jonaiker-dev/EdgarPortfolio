@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class=" mt-[160px] flex flex-col gap-5 scroll md:flex-row md:scroll-mt-46  scroll-mt-72" id="About" >
+    <div class="md:flex-6/12">
+        <h1 class="titulo text-white text-[43px] md:text-8xl">Acerca De Mi</h1>
+    </div>
+    <div class="flex flex-col gap-y-5 md:flex-6/12">
+        <p class=" text-[32px] text-white font-medium  texto ">Programador FrontEnd Angular</p>
+        <p class="text-balance text-lg texto" >
+    
+                Soy un programador front-end con experiencia sólida en el desarrollo de aplicaciones web dinámicas utilizando Angular. Su habilidad para construir interfaces de usuario atractivas e interactivas se complementa con conocimientos valiosos en el backend con .NET Core y la gestión de bases de datos con SQL Server. Esta combinación de habilidades le permite abordar proyectos de desarrollo web de manera integral, desde la concepción hasta la implementación.
+        </p>
+        
+        
+        <!-- Botones Sociales -->
+        <div class=" flex mt-[32px] justify-between w-80 items-center">
+            <a href="/docs/Resume-Edgar.pdf" download="Resume-Edgar.pdf"  class="flex gap-3 text-sm font-bold text-black items-center border-0 bg-[var(--Botones)] p-4 rounded-4xl">
+                <p class="texto">Descargar CV</p>
+                <Icon name="mdi:download" class="bg-black rounded-full text-white  p-2 w-10 h-10 "/>	
+            </a>
+            <a href="https://www.linkedin.com/in/jonaiker-sunci%C3%B3n-mart%C3%ADnez/" target="_blank" class=" bg-[#222222] text-[var(--Botones)] border-0 rounded-full w-14 h-14 flex items-center justify-center	">
+                <Icon name="line-md:linkedin" class='text-3xl' />
+            </a>
+            <a href="https://github.com/Jonaiker-dev" target="_blank" class="bg-[#222222] text-[var(--Botones)] border-0 rounded-full w-14 h-14 flex items-center justify-center">
+                <Icon name="line-md:github"  class='text-3xl'/>
+            </a>
+        </div>
+    </div>
+   
+</div>
+<img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="mt-20 mx-auto w-[90%] md:max-h-[700px] max-h-[343px] rounded-lg ">

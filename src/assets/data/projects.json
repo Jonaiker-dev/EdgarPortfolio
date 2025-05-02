@@ -24,5 +24,18 @@
             }
         ],
         "github":"https://github.com/Jonaiker-dev/EdgarPortfolio"
+    },
+    {   
+        "img":"/scalar.webp",
+        "title":"Web API de Trabajadores en empresa Textil",
+        "description":"Proyecto realizado en .Net Core 9 para una prueba tecnica, esta api maneja un Login que hashea el password para guardarlos en la DB , CRUD para los trabajadores de la empresa ",
+        "Tech":[
+            {
+                ".Net Core":"skill-icons:dotnet",
+                "C#":"skill-icons:cs"
+                
+            }
+        ],
+        "github":"https://github.com/Jonaiker-dev/ProyectoTDVBE/tree/master/ProyectoTDVBE"
     }
 ]

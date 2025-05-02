@@ -1,10 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Abouts from "../components/About.astro"
+
+import Description from "../components/description.astro";
+import Knowledge from "../components/Knowledge.astro";
+import Contact from "../components/Contact.astro";
 
 
 ---
-<Layout>
-    <Abouts />
-    <a href="https://drive.google.com/file/d/1u6hI8Lz52X0jCA6aIoTvY-S_SbUSV6xk/view?usp=drive_link">Resume</a>
+<Layout pages="About">
+    <Description />
+    <Knowledge />
+    <hr class="mt-30 text-[#484848] xl:-mx-[90px] 2xl:-mx-[210px] -mx-4 w-screen ">
+    <Contact/>
 </Layout>

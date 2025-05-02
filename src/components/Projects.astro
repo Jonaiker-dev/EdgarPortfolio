@@ -2,6 +2,8 @@
 import data from "../assets/data/projects.json"
 import { Icon } from 'astro-icon/components';
 
+
+
 ---
 <div class="mt-20 " id="projects">
     <div>
@@ -13,8 +15,10 @@ import { Icon } from 'astro-icon/components';
             data.map(({title,description,Tech,github,img})=>(
                 <div class="md:flex mt-20 md:gap-x-5 scroll">
                     {/* imagen */}
-                    <div class="md:flex-6/12 p-10">
-                    <img src={img} alt="projecto" class="rounder-xl">
+                    <div class="md:flex-6/12 p-10 imagenes ">
+                    <a href={img} data-pswp-width="1440" data-pswp-height="850">
+                        <img src={img} alt="projecto" class="rounder-xl">
+                    </a>
                     </div>
                     <div class="md:flex-6/12 flex flex-col texto  gap-y-5 mt-10 ">
                         <h1 class="text-4xl font-medium text-white">{title}</h1>
@@ -34,3 +38,16 @@ import { Icon } from 'astro-icon/components';
         }
     </div>
 </div>
+
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    import 'photoswipe/style.css';
+
+    const lightbox = new PhotoSwipeLightbox({
+    gallery: '.imagenes',
+    children: 'a',
+    pswpModule: () => import('photoswipe')
+    });
+    lightbox.init();
+
+</script>
