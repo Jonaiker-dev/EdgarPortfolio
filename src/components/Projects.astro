@@ -5,7 +5,7 @@ import { Icon } from 'astro-icon/components';
 
 
 ---
-<div class="mt-20 " id="projects">
+<div class="mt-20 " id="projects" transition:animate="none">
     <div>
         <h1 class="md:text-[76px] text-[43px] titulo text-white" >Proyectos</h1>
         <p class="texto text-xl">Estos son algunos proyectos que he realizado a lo largo de mi aprendizaje: </p>
@@ -43,11 +43,14 @@ import { Icon } from 'astro-icon/components';
     import PhotoSwipeLightbox from 'photoswipe/lightbox';
     import 'photoswipe/style.css';
 
-    const lightbox = new PhotoSwipeLightbox({
-    gallery: '.imagenes',
-    children: 'a',
-    pswpModule: () => import('photoswipe')
-    });
-    lightbox.init();
+    document.addEventListener("astro:page-load",()=>{ 
+        const lightbox = new PhotoSwipeLightbox({
+        gallery: '.imagenes',
+        children: 'a',
+        pswpModule: () => import('photoswipe')
+        });
+        lightbox.init();
+    })
+
 
 </script>
